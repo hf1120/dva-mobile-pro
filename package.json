@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "precommit": "stylelint \"src/**/*.less\" --syntax less",
+    "precommit": "npm run lint",
     "start": "roadhog server",
     "build": "roadhog build",
     "lint": "eslint --ext .js src test",
