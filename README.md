@@ -34,14 +34,16 @@
 
 ## prettier 美化代码 自动让代码风格统一，格式优美，解决了ESLint统一代码风格不足的问题
 *  用法：在下面增加 "prettier --write" (在根目录增加.prettierrc和.prettierignore)
-```  "lint-staged": {
+```
+  "lint-staged": {
       "**/*.{js,jsx,less}": [
         "prettier --write",
         "git add" // 最后重新添加
       ],
       "**/*.{js,jsx}": "npm run lint-staged:js",
       "**/*.less": "stylelint --syntax less"
-```    }
+    }
+```
 *  1.安装eslint-config-prettier (通过使用eslint-config-prettier配置，能够关闭一些不必要的或者是与prettier冲突的lint选项。这样我们就不会看到一些error同时出现两次。)
 *      用法：.eslintrc.js中extends: ['airbnb', 'prettier'],
     
