@@ -41,11 +41,11 @@
     }
 ```
 
-    解释：
+  解释：
 
-    1.--ext 允许你指定 ESLint 在指定的目录下查找 JavaScript 文件时要使用的文件扩展名。默认情况下，它使用 .js 作为唯一性文件扩展名
+  1.--ext 允许你指定 ESLint 在指定的目录下查找 JavaScript 文件时要使用的文件扩展名。默认情况下，它使用 .js 作为唯一性文件扩展名
 
-    2.eslint --ext .js 校验.js文件， eslint --ext .js, .ts 校验.js和.ts文件
+  2.eslint --ext .js 校验.js文件， eslint --ext .js, .ts 校验.js和.ts文件
 
 ## prettier 美化代码 自动让代码风格统一，格式优美，解决了ESLint统一代码风格不足的问题
   用法：在下面增加 "prettier --write" (在根目录增加.prettierrc和.prettierignore)
