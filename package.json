@@ -1,10 +1,10 @@
 {
   "private": true,
   "scripts": {
-    "precommit": "npm run lint-staged",
+    "precommit": "npm run lint",
     "start": "roadhog server",
     "build": "roadhog build",
-    "lint": "eslint --ext .js src test && stylelint \"src/**/*.less\" --syntax less",
+    "lint": "eslint --ext .js src test",
     "lint-staged": "lint-staged",
     "lint-staged:js": "eslint --ext .js"
   },
@@ -29,6 +29,9 @@
     "stylelint-config-standard": "^18.2.0"
   },
   "lint-staged": {
+    "**/*.{js,jsx,less}": [
+      "git add"
+    ],
     "**/*.{js,jsx}": "npm run lint-staged:js",
     "**/*.less": "stylelint --syntax less"
   }
