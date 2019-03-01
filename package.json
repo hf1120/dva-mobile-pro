@@ -9,11 +9,23 @@
     "lint-staged:js": "eslint --ext .js"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.2.5",
+    "antd-mobile": "^2.2.9",
+    "classnames": "^2.2.6",
     "dva": "^2.4.1",
-    "lodash": "^4.17.11",
-    "lodash-decorators": "^6.0.1",
+    "dva-loading": "^2.0.6",
+    "fastclick": "^1.0.6",
+    "moment": "^2.24.0",
+    "numeral": "^2.0.6",
+    "omit.js": "^1.0.0",
+    "path-to-regexp": "^3.0.0",
+    "prop-types": "^15.7.2",
+    "qs": "^6.6.0",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "reqwest": "^2.0.5",
+    "setprototypeof": "^1.1.1",
+    "url-polyfill": "^1.1.3"
   },
   "devDependencies": {
     "babel-eslint": "^8.1.2",
@@ -21,6 +33,8 @@
     "babel-plugin-import": "^1.6.7",
     "babel-plugin-module-resolver": "^3.1.1",
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "cross-env": "^5.2.0",
+    "cross-port-killer": "^1.0.1",
     "eslint": "^5.0.0",
     "eslint-config-airbnb": "^17.0.0",
     "eslint-config-prettier": "^2.9.0",
@@ -35,9 +49,13 @@
     "prettier": "^1.16.4",
     "redbox-react": "^1.4.3",
     "roadhog": "^2.5.0-beta.1",
+    "roadhog-api-doc": "^1.1.2",
     "stylelint": "^9.10.1",
     "stylelint-config-prettier": "^5.0.0",
     "stylelint-config-standard": "^18.2.0"
+  },
+  "optionalDependencies": {
+    "puppeteer": "^1.4.0"
   },
   "lint-staged": {
     "**/*.{js,jsx,less}": [
@@ -46,5 +64,13 @@
     ],
     "**/*.{js,jsx}": "npm run lint-staged:js",
     "**/*.less": "stylelint --syntax less"
-  }
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 10"
+  ]
 }

@@ -5,7 +5,11 @@
   使用dva创建项目时，自动集成了Less，autoprefixer
 
 ## eslint
-  基本使用：安装eslint-config-airbnb，然后去.eslintrc.js里配置即可
+  基本使用：
+  
+  1.安装eslint-config-airbnb，然后去.eslintrc.js里配置
+
+  2.安装eslint-plugin-jsx-a11y(这个版本可能不好搭配)
 
 ## stylelint 校验css语法
 *  基本使用：(根目录增加.stylelintrc文件)
