@@ -1,6 +1,8 @@
 ## dva-mobile-pro
   使用dva和ant mobile搭建的移动端框架
 
+# css和js语法校验，git提交校验和代码美化
+
 ## 自动集成
   使用dva创建项目时，自动集成了Less，autoprefixer
 
