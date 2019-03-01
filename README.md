@@ -27,18 +27,18 @@
   用法：在.stylelintrc中extends中增加stylelint-config-prettier即可
 
 ```
-    "scripts": {
-      "precommit": "npm run lint-staged",
-      "lint-staged": "lint-staged",
-      "lint-staged:js": "eslint --ext .js"
-    },
-    "lint-staged": {
-      "**/*.{js,jsx,less}": [
-        "git add" // 最后重新添加
-      ],
-      "**/*.{js,jsx}": "npm run lint-staged:js",
-      "**/*.less": "stylelint --syntax less"
-    }
+"scripts": {
+  "precommit": "npm run lint-staged",
+  "lint-staged": "lint-staged",
+  "lint-staged:js": "eslint --ext .js"
+},
+"lint-staged": {
+  "**/*.{js,jsx,less}": [
+    "git add" // 最后重新添加
+  ],
+  "**/*.{js,jsx}": "npm run lint-staged:js",
+  "**/*.less": "stylelint --syntax less"
+}
 ```
 
   解释：
@@ -51,14 +51,14 @@
   用法：在下面增加 "prettier --write" (在根目录增加.prettierrc和.prettierignore)
 
 ```
-  "lint-staged": {
-      "**/*.{js,jsx,less}": [
-        "prettier --write",
-        "git add" // 最后重新添加
-      ],
-      "**/*.{js,jsx}": "npm run lint-staged:js",
-      "**/*.less": "stylelint --syntax less"
-    }
+"lint-staged": {
+    "**/*.{js,jsx,less}": [
+      "prettier --write",
+      "git add" // 最后重新添加
+    ],
+    "**/*.{js,jsx}": "npm run lint-staged:js",
+    "**/*.less": "stylelint --syntax less"
+  }
 ```
   1.安装eslint-config-prettier (通过使用eslint-config-prettier配置，能够关闭一些不必要的或者是与prettier冲突的lint选项。这样我们就不会看到一些error同时出现两次。)
 
