@@ -18,10 +18,10 @@
         
   解释：--syntax less，校验less语法
 
-   高级使用：(配合lint-staged一起使用)
-        1.安装lint-staged (只校验当前改动的信息)
-        2.安装stylelint-config-prettier (前提用到了prettier，如果能通过这个美化的，就不会再报错中出现了，比如缩进，空格问题)
-            用法：在.stylelintrc中extends中增加stylelint-config-prettier即可
+  高级使用：(配合lint-staged一起使用)
+  1.安装lint-staged (只校验当前改动的信息)
+  2.安装stylelint-config-prettier (前提用到了prettier，如果能通过这个美化的，就不会再报错中出现了，比如缩进，空格问题)
+  用法：在.stylelintrc中extends中增加stylelint-config-prettier即可
 ```
     "scripts": {
       "precommit": "npm run lint-staged",
