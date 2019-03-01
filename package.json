@@ -4,7 +4,9 @@
     "start": "roadhog server",
     "build": "roadhog build",
     "lint": "eslint --ext .js src test && stylelint \"src/**/*.less\" --syntax less",
-    "precommit": "npm run lint"
+    "precommit": "npm run lint-staged",
+    "lint-staged": "lint-staged",
+    "lint-staged:js": "eslint --ext .js"
   },
   "dependencies": {
     "dva": "^2.4.1",
@@ -25,5 +27,12 @@
     "roadhog": "^2.0.0",
     "stylelint": "^9.10.1",
     "stylelint-config-standard": "^18.2.0"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,less}": [
+      "git add"
+    ],
+    "**/*.{js,jsx}": "npm run lint-staged:js",
+    "**/*.less": "stylelint --syntax less"
   }
 }
