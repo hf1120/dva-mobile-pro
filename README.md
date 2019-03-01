@@ -19,7 +19,7 @@
     },
     "lint-staged": {
       "**/*.{js,jsx,less}": [
-        "git add"
+        "git add" // 最后重新添加
       ],
       "**/*.{js,jsx}": "npm run lint-staged:js",
       "**/*.less": "stylelint --syntax less"
