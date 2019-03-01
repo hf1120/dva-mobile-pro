@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "precommit": "npm run lint",
+    "precommit": "npm run lint-staged",
     "start": "roadhog server",
     "build": "roadhog build",
     "lint": "eslint --ext .js src test",
