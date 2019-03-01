@@ -40,6 +40,7 @@
       "**/*.less": "stylelint --syntax less"
     }
 ```
+
     解释：
 
     1.--ext 允许你指定 ESLint 在指定的目录下查找 JavaScript 文件时要使用的文件扩展名。默认情况下，它使用 .js 作为唯一性文件扩展名
@@ -60,6 +61,6 @@
     }
 ```
   1.安装eslint-config-prettier (通过使用eslint-config-prettier配置，能够关闭一些不必要的或者是与prettier冲突的lint选项。这样我们就不会看到一些error同时出现两次。)
-  
+
   用法：.eslintrc.js中extends: ['airbnb', 'prettier'],
     
