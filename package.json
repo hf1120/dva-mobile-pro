@@ -2,8 +2,8 @@
   "private": true,
   "scripts": {
     "precommit": "npm run lint-staged",
-    "start": "roadhog server",
-    "build": "roadhog build",
+    "start": "cross-env ESLINT=none roadhog server",
+    "build": "cross-env ESLINT=none roadhog build",
     "lint": "eslint --ext .js src test",
     "lint-staged": "lint-staged",
     "lint-staged:js": "eslint --ext .js"
@@ -22,6 +22,8 @@
     "prop-types": "^15.7.2",
     "qs": "^6.6.0",
     "react": "^16.2.0",
+    "react-container-query": "^0.11.0",
+    "react-document-title": "^2.0.3",
     "react-dom": "^16.2.0",
     "reqwest": "^2.0.5",
     "setprototypeof": "^1.1.1",
